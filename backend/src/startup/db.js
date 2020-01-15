@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 module.exports = function() {
   mongoose
     .connect(
-      "mongodb+srv://giuliano:giuliano123456@cluster0-r5w9o.mongodb.net/week10?retryWrites=true&w=majority",
+      process.env.DB_CONNECTION,
       {
         useCreateIndex: true,
         useNewUrlParser: true,
