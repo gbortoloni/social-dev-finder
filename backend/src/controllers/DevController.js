@@ -66,6 +66,8 @@ module.exports = {
       const { _id } = req.params;
       const { bio, techs, latitude, longitude } = req.body;
 
+      const techsArray = parseStringAsArray(techs);
+
       const location = {
         type: "Point",
         coordinates: [longitude, latitude]
@@ -81,7 +83,7 @@ module.exports = {
         { _id },
         {
           bio,
-          techs,
+          techs: techsArray,
           location
         }
       );
