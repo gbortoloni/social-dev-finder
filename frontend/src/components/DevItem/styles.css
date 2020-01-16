@@ -49,3 +49,34 @@ li.dev-item a {
 li.dev-item a:hover {
   color: #5a2ea6;
 }
+
+li.dev-item button {
+  border: 0;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+}
+
+li.dev-item button.remove {
+  background: #d14419;
+  transition: backgroud 0.5s;
+}
+
+li.dev-item button.remove:hover {
+  background: #a32b07;
+}
+
+li.dev-item button.edit {
+  background: #c9c918;
+  transition: backgroud 0.5s;
+}
+
+li.dev-item button.edit:hover {
+  background: #a6a23f;
+}
